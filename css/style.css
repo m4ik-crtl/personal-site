@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #121212;
+    color: #eee;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.container {
+    max-width: 480px;
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(145deg, #1f1f1f, #232323);
+    box-shadow: 0 0 15px rgba(255 255 255 / 0.1);
+    border-radius: 20px;
+    padding: 2rem 1.5rem 3rem;
+}
+
+.perfil {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #4c9aff;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 0 20px #4c9aff;
+}
+
+.titulo {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    color: #4c9aff;
+}
+
+.nome {
+    color: #87cefa;
+}
+
+.texto-intro p {
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.5;
+    min-height: 6.4rem;
+    margin-bottom: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: #333;
+    margin-bottom: 1.8rem;
+}
+
+.links {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 1rem;
+}
+
+.links li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 500;
+    color: #87cefa;
+    text-decoration: none;
+    font-size: 0.9rem;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.links li a i {
+    font-size: 1.8rem;
+    margin-bottom: 0.3rem;
+    filter: drop-shadow(0 0 2px #87cefa);
+    transition: transform 0.3s ease;
+}
+
+.links li a:hover i {
+    transform: scale(1.3) rotate(15deg);
+    color: #4c9aff;
+    filter: drop-shadow(0 0 6px #4c9aff);
+}
+
+.links li a:hover {
+    color: #4c9aff;
+}
+
+.links li a span {
+    position: relative;
+}
+
+.links li a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background: #4c9aff;
+    transition: width 0.3s ease;
+}
+
+.links li a:hover::after {
+    width: 100%;
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 1.5rem 1rem 2rem;
+    }
+    .perfil {
+        width: 130px;
+        height: 130px;
+    }
+    .titulo {
+        font-size: 1.7rem;
+    }
+    .texto-intro p {
+        font-size: 1rem;
+        min-height: 5.2rem;
+    }
+    .links li a i {
+        font-size: 1.4rem;
+    }
+}
