@@ -28,9 +28,6 @@ portfolio_moderno/
 └── img/
 └── perfil.jpg # Foto de perfil (substitua pela sua foto)
 
-yaml
-Copy
-Edit
 
 ---
 
