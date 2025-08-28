@@ -1,31 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Maikon Silva - Portfólio Moderno</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maikon Silva | Dashboard de Carreira</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    
     <script src="https://kit.fontawesome.com/956e16bce9.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <main class="container">
-        <img class="perfil" src="img/perfil.jpg" alt="Foto Maikon Silva" />
-        <div class="texto-intro">
-            <h1 class="titulo">Olá! Eu sou <span class="nome">Maikon Silva</span></h1>
-            <p id="descricao"></p>
-        </div>
-        <hr />
-        <footer>
-            <ul class="links">
-                <li><a href="https://www.linkedin.com/in/maikon-silva-457b98181/" target="_blank" class="link-anim"><i class="fa-brands fa-linkedin"></i><span>LinkedIn</span></a></li>
-                <li><a href="mailto:mcharles784@gmail.com" class="link-anim"><i class="fa-solid fa-envelope"></i><span>Email</span></a></li>
-                <li><a href="https://github.com/m4ik-crtl" target="_blank" class="link-anim"><i class="fa-brands fa-github"></i><span>GitHub</span></a></li>
-                <li><a href="https://drive.google.com/file/d/14QhbcGxEkNXbvoIvCzN7HEX7XtbHt56B/view?usp=sharing" target="_blank" class="link-anim"><i class="fa-solid fa-file"></i><span>Resume</span></a></li>
-                <li><a href="https://www.instagram.com/angel_iyzz/" target="_blank" class="link-anim"><i class="fa-brands fa-instagram"></i><span>Instagram</span></a></li>
-            </ul>
-        </footer>
-    </main>
-<script src="js/script.js"></script>
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <h1>Maikon Silva: Dashboard Analítico</h1>
+            <p class="subtitle">Analisando dados e desenvolvendo soluções.</p>
+        </header>
+
+        <main class="dashboard-grid">
+            <!-- Perfil -->
+            <section id="profile" class="widget card">
+                <h2 class="widget-title"><i class="fa-solid fa-user-chart"></i> Perfil do Analista</h2>
+                <div class="widget-content profile-content">
+                    <img src="img/perfil.jpg" alt="Foto de Maikon Silva" class="profile-photo">
+                    <div>
+                        <p><strong>Técnico em Análise e Desenvolvimento de Sistemas</strong> com uma paixão dual: construir interfaces web dinâmicas, e extrair insights valiosos de dados usando Python, Pandas e Power BI.</p>
+                        <p>Meu foco é criar soluções que não apenas funcionem bem, mas que também sejam inteligentes e orientadas por dados, com experiência em automação de processos (Make/Integromat) para otimizar fluxos de trabalho em ERPs, planilhas, rotinas e processos para a empresa..</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Gráfico de habilidades -->
+            <section id="skills" class="widget card">
+                <h2 class="widget-title"><i class="fa-solid fa-chart-pie"></i> Distribuição de Competências</h2>
+                <div class="widget-content chart-container">
+                    <canvas id="skillsChart"></canvas>
+                </div>
+            </section>
+            
+            <!-- Projetos -->
+            <section id="projects" class="widget card full-width">
+                <h2 class="widget-title"><i class="fa-solid fa-satellite-dish"></i> Projetos Recentes</h2>
+                <div id="projects-list" class="widget-content">
+                    <div class="loader">Carregando dados do repositório...</div>
+                </div>
+            </section>
+
+            <!-- Contatos -->
+            <section id="contact" class="widget card full-width">
+                <h2 class="widget-title"><i class="fa-solid fa-share-nodes"></i> Endpoints de Contato</h2>
+                <div class="widget-content">
+                    <ul class="contact-links">
+                        <li><a href="https://www.linkedin.com/in/maikon-silva-457b98181/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+                        <li><a href="https://github.com/m4ik-crtl" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a></li>
+                        <li><a href="https://www.instagram.com/angel_iyzz/" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                        <li><a href="mailto:mcharles784@gmail.com"><i class="fa-solid fa-envelope"></i> 1º Email</a></li>
+                        <li><a href="mailto:maikon.fdasilva@outlook.com"><i class="fa-solid fa-envelope"></i> 2º Email</a></li>
+                        <li><a href="https://drive.google.com/file/d/1w4pV81iQmNOAcBpDlmDO3WVt3wmi7426/view?usp=sharing" target="_blank"><i class="fa-solid fa-file-lines"></i> Resumo (CV)</a></li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
