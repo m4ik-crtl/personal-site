@@ -67,6 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "alertas_appscript",
             "vehicle-sales-analysis",
             "Tomada-de-Decis-o-Baseada-em-Dados-Prioriza-o-de-Hip-teses-e-Teste-A-B"
+            "alerta_googleforms_"
         ];
     
         try {
