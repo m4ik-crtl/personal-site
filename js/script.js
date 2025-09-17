@@ -68,6 +68,9 @@ document.addEventListener('DOMContentLoaded', () => {
             "vehicle-sales-analysis",
             "Tomada-de-Decis-o-Baseada-em-Dados-Prioriza-o-de-Hip-teses-e-Teste-A-B"
             "alerta_googleforms_"
+            "E-Commerce-Identificacao-de-Perfis-de-Consumidores"
+            "recommerder_system"
+            "Analise-de-Livros-e-Avaliacoes-com-SQL"
         ];
     
         try {
